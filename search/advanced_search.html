@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced_search</title>
+        <style>
+            .mainbar {
+                font-size: 13px;
+                overflow: hidden;
+                background-color:white;
+                margin-left: 8%;
+                margin-right: 5%;
+                margin-bottom: 10px;
+                height: 30px;
+                font-family: arial;
+            }
+            .mainl{
+                background-color: white;
+                float: left;
+                width: 16%;
+                height: 100%;
+                color: black;
+                
+            }
+            .l{
+                background-color: white;
+                float: left;
+                width: 16%;
+                font: normal normal 17px arial;
+                color: black;
+            }
+            .r{
+                background-color:white;
+                float: left;
+                margin-left: 350px;
+                font: normal normal 15px arial;
+                color: rgb(78, 78, 78)
+                
+            }
+            .box{
+                background-color: white;
+                float:left;
+                width: 350px;
+                height: 28px;
+            }
+            .box input{
+                float: right;
+                border: 1px solid gray;
+                border-radius: 3px;
+                width: 348px;
+                height: 26px;
+            }
+
+            .mainr{
+                background-color: white;
+                float: left;
+                width: 40%;
+                height: 100%;
+                margin-left: 10px;
+                color: rgb(78, 78, 78)
+                
+            }
+
+            .link{
+                position:relative;
+                left: 1000px;
+                top:5px;
+                text-decoration: none;
+                color: rgb(0, 153, 255);
+                
+            }
+            .appbar{
+                margin-top: 40px;
+                margin-bottom: 60px;
+                background-color:white;
+                color: #d93025;
+                font: normal normal 20px arial; 
+            }
+            label{
+                line-height: 35px;
+            }
+            .box .bt{
+                float: right;
+                width: 150px;
+                height: 26px;
+                background-color: #4d90fe;
+                font: normal normal 12px arial;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>  
+        <form action="https://google.com/search?">
+            <div>
+                <a class="link" href="index.html">Google Search</a>
+            </div>
+            <div class="appbar"><div style="margin-left: 30px;">Advanced search</div></div>
+            <div class="mainbar">
+                <div class="l">Find pages with…</div>
+                <div class="r">To do this in the search box.</div>
+            </div>
+            <div class = "mainbar">
+                <div class="mainl">
+                    <label>all these words:</label>
+                </div> 
+                <div class="box"><input type="text" name="as_q"> </div>
+                <div class="mainr">
+                    <label>Type the important words: tri-colour rat terrier</label>
+                </div>
+            </div>
+            <div class = "mainbar">
+                <div class="mainl">
+                    <label>this exact word or phrase:</label>
+                </div>  
+                <div class="box"><input type="text" name="as_epq"></div> 
+                <div class="mainr">
+                    <label>Put exact words in quotes: "rat terrier"</label>
+                </div>
+            </div>
+            <div class = "mainbar">
+                <div class="mainl">
+                    <label>any of these words:</label>
+                </div> 
+                <div class="box"><input type="text" name="as_oq"> </div>
+                <div class="mainr">
+                    <label>Type OR between all the words you want: miniature OR standard</label>
+                </div>
+            </div>
+            <div class = "mainbar">
+                <div class="mainl">
+                    <label>none of these words:</label>
+                </div> 
+                <div class="box"><input  type="text" name="as_eq"> </div>
+                <div class="mainr">
+                    <label>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
+                </div>
+            </div>
+            <div class = "mainbar" style="margin-top: 30px;">
+                <div class="mainl"></div> 
+                <div class="box" style = "border-style:none; ">
+                    <input class = "bt" type="submit" value="Advanced Search">
+                </div> 
+            </div>
+        </form>
+    </body>
+</html>
